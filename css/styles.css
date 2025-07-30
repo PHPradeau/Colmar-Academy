@@ -1,0 +1,31 @@
+/* Root variables */
+:root {
+  --color-primary: #2C3E50;
+  --color-secondary: #ECF0F1;
+  --color-accent: #E67E22;
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: Georgia, serif;
+  --spacing-unit: 1rem;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  line-height: 1.6;
+}
+
+header, nav, main, footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-unit);
+}
+
+/* ...existing code... */
