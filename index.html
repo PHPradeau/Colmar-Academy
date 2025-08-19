@@ -9,25 +9,138 @@
 <body>
   <header class="site-header">
     <div class="header__inner">
-      <a href="#" class="logo">
-        <img src="resources/images/ic-logo.svg" alt="Colmar Academy logo">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
+  <a href="#" class="logo"><img src="resources/images/ic-logo.svg" alt="Colmar Academy logo"></a>
+  <div class="site-title">
+        <span class="site-title__primary">COLMAR</span>
+        <span class="site-title__secondary">ACADEMY</span>
+      </div>
+  <nav class="main-nav">
+        <!-- Text links for desktop -->
+        <ul class="main-nav__list nav-text">
           <li class="main-nav__item"><a href="#">On campus</a></li>
           <li class="main-nav__item"><a href="#">Online</a></li>
         </ul>
+        <!-- Icon links for mobile -->
+        <ul class="main-nav__list nav-icons">
+          <li class="main-nav__item"><a href="#"><img src="resources/images/ic-on-campus.svg" alt="On campus"></a></li>
+          <li class="main-nav__item"><a href="#"><img src="resources/images/ic-online.svg" alt="Online"></a></li>
+        </ul>
+        <!-- Sign in link -->
+        <a href="#" class="login-link">
+          <img src="resources/images/ic-login.svg" alt="Sign in" class="login-icon">
+          <span class="login-text">Sign in</span>
+        </a>
       </nav>
-      <a href="#" class="login-link">
-        <img src="resources/images/ic-login.svg" alt="Log in">
-      </a>
     </div>
   </header>
   <main>
-    <!-- Main content sections -->
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__image">
+        <img src="resources/images/banner.jpg" alt="Students studying">
+      </div>
+      <div class="hero__content">
+        <h1>Learn something new everyday</h1>
+        <p>Discover courses and lectures that inspire, connect, and challenge.</p>
+        <a href="#" class="btn">Start learning</a>
+      </div>
+    </section>
+
+    <!-- Practice Feature Section -->
+    <section class="feature feature--practice">
+      <div class="feature__image">
+        <img src="resources/images/information-main.jpg" alt="Practicing student">
+      </div>
+      <div class="feature__content">
+        <h2>It doesn’t hurt to keep practicing</h2>
+        <p>Whether you’re brushing up on old skills or learning something entirely new, consistent practice is key to mastery. Join our community to stay motivated.</p>
+        <ul class="feature__list">
+          <li class="feature__list-item">
+            <img src="resources/images/information-orientation.jpg" alt="Orientation">
+            <div>
+              <h3>Orientation date</h3>
+              <time datetime="2025-08-20">Aug 20, 2025</time>
+            </div>
+          </li>
+          <li class="feature__list-item">
+            <img src="resources/images/information-campus.jpg" alt="Our campus">
+            <div>
+              <h3>Our campus</h3>
+              <a href="#">Explore campus</a>
+            </div>
+          </li>
+          <li class="feature__list-item">
+            <img src="resources/images/information-guest-lecture.jpg" alt="Guest lecture">
+            <div>
+              <h3>Special guest lecture</h3>
+              <a href="#">Register now</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Start Learning Courses Section -->
+    <section class="courses">
+      <h2>Start learning</h2>
+      <div class="courses__grid">
+        <article class="course-card">
+          <img src="resources/images/course-software.jpg" alt="Software Engineering">
+          <h3>Software Engineering</h3>
+        </article>
+        <article class="course-card">
+          <img src="resources/images/course-computer-art.jpg" alt="Computer Art">
+          <h3>Computer Art</h3>
+        </article>
+        <article class="course-card">
+          <img src="resources/images/course-design.jpg" alt="Design">
+          <h3>Design</h3>
+        </article>
+        <article class="course-card">
+          <img src="resources/images/course-data.jpg" alt="Data">
+          <h3>Data</h3>
+        </article>
+        <article class="course-card">
+          <img src="resources/images/course-business.jpg" alt="Business">
+          <h3>Business</h3>
+        </article>
+        <article class="course-card">
+          <img src="resources/images/course-marketing.jpg" alt="Marketing">
+          <h3>Marketing</h3>
+        </article>
+      </div>
+    </section>
+
+    <!-- Thesis Exhibit Section -->
+    <section class="thesis">
+      <h2>Thesis exhibit</h2>
+      <div class="thesis__content">
+        <div class="thesis__video">
+          <video controls src="resources/videos/thesis.mp4" poster="resources/images/thesis-fisma.jpg">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <aside class="thesis__aside">
+          <article class="thesis-card">
+            <img src="resources/images/thesis-fisma.jpg" alt="FISMA thesis">
+            <h3>FISMA Design and Principles</h3>
+          </article>
+          <article class="thesis-card">
+            <img src="resources/images/thesis-now-and-then.jpg" alt="Now and then thesis">
+            <h3>Now and Then</h3>
+          </article>
+        </aside>
+      </div>
+    </section>
   </main>
-  <footer>
-    <!-- Footer content -->
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <p>Colmar Academy © 2025. All rights reserved.</p>
+      <ul class="footer__links">
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Terms of service</a></li>
+      </ul>
+    </div>
   </footer>
 </body>
 </html>
